@@ -35,5 +35,17 @@ email <-
 ),
     footer = md("[Link](https://www.myhrfuture.com/blog/2022/3/2/how-can-people-analytics-deliver-solutions-at-scale-through-productisation)"))#md([Article Link](link)
 
-  email   
 
+  smtp_send(
+    
+    email = email,
+    
+   to = 'jcvallier@hotmail.com',
+      
+   from = 'jcvall@aim.com',
+     
+   subject = 'HR Digital Leaders Blog v4',
+   
+   credentials = creds_file('aol_cred')
+  
+  )
